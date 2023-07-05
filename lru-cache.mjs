@@ -148,6 +148,15 @@ export class LruCache {
   }
 
   /**
+   * Removes the key and value from the cache.
+   * @param key
+   * @returns {boolean} true if the key was deleted
+   */
+  remove(key) {
+    return this.cache.delete(key)
+  }
+
+  /**
    * Purge cache entries with expired TTL.
    */
   prune() {

@@ -155,3 +155,13 @@ test('autostart pruning/clearing', (t) => {
   t.truthy(zCache.getStats().periodicPruning)
   t.truthy(zCache.getStats().periodicClearing)
 })
+
+test('remove', (t) => {
+  const dCache = new LruCache()
+
+  t.falsy(dCache.get('d1'))
+  dCache.put('d1', 1)
+  t.is(dCache.get('d1'), 1)
+  t.truthy(dCache.remove('d1'))
+  t.falsy(dCache.get('d1'))
+})
