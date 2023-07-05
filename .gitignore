@@ -28,3 +28,5 @@ env.sh
 
 # linux editor files
 *~
+
+.npmrc

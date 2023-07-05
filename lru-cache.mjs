@@ -134,11 +134,10 @@ export class LruCache {
    * </pre>
    *
    * @param key
-   * @param value
    * @param options see get at {@link https://www.npmjs.com/package/lru-cache}
    * @returns {*} object from cache or undefined
    */
-  get(key, value, options = {}) {
+  get(key, options = {}) {
     const _value = this.cache.get(key, options)
     if (_value == null) {
       ++this.stats.misses
