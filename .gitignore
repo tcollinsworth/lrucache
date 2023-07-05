@@ -1,0 +1,30 @@
+# Logs
+*.log
+logs
+tmp
+npm-debug.log*
+app/logs/
+test-results
+.nyc_output
+coverage
+
+# Large files/libs
+node_modules
+app/dist/
+server/logs/
+client/dist/
+
+# secrets
+env.sh
+.env.sh
+
+# Mac
+.DS_Store
+
+#Ide
+.idea
+.vscode
+*.vsix
+
+# linux editor files
+*~

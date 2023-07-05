@@ -1,0 +1,10 @@
+*.npmrc
+.idea
+__tests__
+coverage
+.eslintignore
+.eslintrc.cjs
+.gitignore
+.npmignore
+ava.config.cjs
+.git
