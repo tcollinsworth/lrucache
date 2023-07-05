@@ -24,6 +24,7 @@ test('chunked pruning max time', async (t) => {
 
 test('multiple caches', (t) => {
   const aCache = new LruCache('aCache')
+  t.falsy(aCache.get('a1'))
   aCache.put('a1', 1)
   t.is(aCache.get('a1'), 1)
   aCache.put('a1', 2)
@@ -44,8 +45,8 @@ test('multiple caches', (t) => {
   }
 
   const aCacheExpectedStatus = {
-    hits: 0,
-    misses: 0,
+    hits: 1,
+    misses: 1,
     periodicClearing: false,
     periodicPruning: false,
     entryCount: 1,

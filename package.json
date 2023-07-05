@@ -1,6 +1,6 @@
 {
   "name": "@tcollinsworth/lrucache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lru cache with express middleware for inspection/management",
   "type": "module",
   "engines": {

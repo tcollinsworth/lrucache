@@ -139,7 +139,13 @@ export class LruCache {
    * @returns {*} object from cache or undefined
    */
   get(key, value, options = {}) {
-    return this.cache.get(key, options)
+    const _value = this.cache.get(key, options)
+    if (_value == null) {
+      ++this.stats.misses
+    } else {
+      ++this.stats.hits
+    }
+    return _value
   }
 
   /**

@@ -4,6 +4,7 @@ This lib uses [lru-cache](https://www.npmjs.com/package/lru-cache).
 
 It provides:
 
+  * Tracks hits and misses on get
   * Express middleware for inspection and management of all caches
     * Statistics - hits, misses, entry count
   * Scheduled periodic pruning and clearing
