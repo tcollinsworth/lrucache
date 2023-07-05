@@ -29,11 +29,11 @@ app.use('/lru-cache', lruExpress.getMiddleware())
 
 # REST APIs
 
- * /purgeStale?cacheName=ALL | <cacheName>
- * /clearCache?cacheName=ALL | <cacheName>
- * /getOptions?cacheName=ALL | <cacheName>
- * /getStats?cacheName=ALL | <cacheName>
- * /resetStats?cacheName=ALL | <cacheName>
+ * /purgeStale?cacheName=ALL | cacheName
+ * /clearCache?cacheName=ALL | cacheName
+ * /getOptions?cacheName=ALL | cacheName
+ * /getStats?cacheName=ALL | cacheName
+ * /resetStats?cacheName=ALL | cacheName
 
 # Periodic Scheduling
 
